@@ -5,6 +5,8 @@
   </div>
   <div class="login-plane">
     <div class="links-container">
+      <img class="human" src="@/assets/images/human.png" alt="" />
+
       <a id="avatar" href="https://github.com/qxdn">
         <img src="https://cdn.qxdn.fun/avatar.jpg" alt="avatar" />
       </a>
@@ -498,6 +500,32 @@ $font: 'Karla', sans-serif;
   .links-container {
     position: relative;
     width: 100%;
+  }
+
+  @keyframes humanMove {
+    0% {
+      top: 10%;
+    }
+    25% {
+      top: 13%;
+    }
+    50% {
+      top: 15%;
+    }
+    75% {
+      top: 13%;
+    }
+    100% {
+      top: 10%;
+    }
+  }
+
+  .human {
+    position: absolute;
+    width: 260px;
+    right: 15%;
+    top: 15%;
+    animation: humanMove 8s linear 0s infinite normal;
   }
 }
 
